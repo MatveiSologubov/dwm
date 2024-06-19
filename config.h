@@ -61,7 +61,6 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 static const char *roficmd[] = { "rofi", "-show", "drun", "-show-icons", NULL };
 static const char *termcmd[] = { "st", NULL };
 static const char *lockcmd[] = { "xlock", "-mode", "matrix", NULL };
-static const char *scrncmd[] = { "maim", "-s", "~/screenshots/pic-selected-$(date '+%y%m%d-%H%M-%S').png", NULL };
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -90,10 +89,8 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
-	
-	{ 0,				XK_Print,  spawn,	   {.v = scrncmd }  },
+	{ 0,				XK_Print,  spawn,	   {.v = (const char*[]){ "maimpick-sel", "NULL" } }  },
 	{ ShiftMask,			XK_Print,  spawn,	   {.v = (const char*[]){ "maimpick", NULL } } },
-
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
