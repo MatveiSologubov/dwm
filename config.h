@@ -86,6 +86,7 @@ static const Key keys[] = {
 	{ MODKEY,						XK_m,      setlayout,      {.v = &layouts[2]} },
 	{ MODKEY,						XK_p, 	   setlayout,      {0} },
 	{ MODKEY|ShiftMask, 			XK_p, 	   spawn,		   {.v = (const char*[]){ "librewolf", "--private-window", NULL } } },
+	{ MODKEY,			 			XK_z, 	   spawn,		   {.v = (const char*[]){ "zen-browser", NULL } } },
 	{ MODKEY|ShiftMask, 			XK_space,  togglefloating, {0} },
 	{ MODKEY,						XK_0,      view,           {.ui = ~0 } },
 	{ MODKEY|ShiftMask, 			XK_0,      tag,            {.ui = ~0 } },
