@@ -94,6 +94,7 @@ static const Key keys[] = {
 	{ MODKEY,						XK_period, focusmon,       {.i = +1 } },
 	{ MODKEY|ShiftMask, 			XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask, 			XK_period, tagmon,         {.i = +1 } },
+	{ MODKEY,                       XK_x,      movecenter,     {0} },
 	{ 0,							XK_Print,  spawn,	       {.v = (const char*[]){ "maimpick-sel", NULL } }  },
 	{ ShiftMask,					XK_Print,  spawn,	       {.v = (const char*[]){ "maimpick", NULL } } },
 	TAGKEYS(						XK_1,                      0)
