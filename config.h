@@ -71,6 +71,7 @@ static const Key keys[] = {
 	{ MODKEY,						XK_o,      spawn,	       {.v = (const char*[]){ "obsidian", NULL } } },
 	{ MODKEY,						XK_w,      spawn,		   {.v = (const char*[]){ "lowriter", NULL } } },
 	{ MODKEY,						XK_v,      spawn,		   {.v = (const char*[]){ "pavucontrol", NULL } } },
+	{ MODKEY,						XK_a,      spawn,		   {.v = (const char*[]){ "anki", NULL } } },
 	{ MODKEY,						XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,						XK_k,      focusstack,     {.i = -1 } },
 	{ MODKEY,						XK_i,      incnmaster,     {.i = +1 } },
