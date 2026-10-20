@@ -86,7 +86,7 @@ static const Key keys[] = {
 	{ MODKEY,						XK_c,      killclient,     {0} },
 	{ MODKEY,						XK_t,      setlayout,      {.v = &layouts[0]} },
 	{ MODKEY,						XK_f,      fullscreen,     {.v = &layouts[1]} },
-	{ MODKEY|ShiftMask,				XK_f,      spawn,		   {.v = (const char*[]){ "/home/disco/zfind.sh", NULL } } },
+	{ MODKEY|ShiftMask,				XK_f,      spawn,		   {.v = (const char*[]){ "/home/disco/.dotfiles/scripts/zfind.sh", NULL } } },
 	{ MODKEY,						XK_m,      setlayout,      {.v = &layouts[2]} },
 	{ MODKEY|ShiftMask, 			XK_m, 	   spawn,		   {.v = (const char*[]){ "virt-manager", NULL } } },
 	{ MODKEY,						XK_p, 	   setlayout,      {0} },
